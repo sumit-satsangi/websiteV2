@@ -18,7 +18,6 @@ import { useEffect, useMemo, useState } from "react";
 import { CareerTimeline } from "@/components/portfolio/CareerTimeline";
 import { CaseStudyCard } from "@/components/portfolio/CaseStudyCard";
 import { CapabilityConstellation } from "@/components/portfolio/CapabilityConstellation";
-import { StyleControls } from "@/components/portfolio/StyleControls";
 import { ArrowLink, Reveal, SectionIntro, SignalMark, VerifiedLabel } from "@/components/portfolio/PortfolioPrimitives";
 import {
   accomplishments,
@@ -275,7 +274,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className="site-footer"><div className="site-footer__brand"><SignalMark compact /><span>Sumit Satsangi / Turning Data Into Decisions</span></div><div className="site-footer__links"><a href={`mailto:${profile.email}`}><Mail size={14} /> Email</a><a href={profile.links.github} target="_blank" rel="noreferrer"><Github size={14} /> GitHub</a><a href={profile.links.linkedin} target="_blank" rel="noreferrer"><Linkedin size={14} /> LinkedIn</a></div><div className="site-footer__meta"><StyleControls /><span className="site-footer__note">Built around public source material · {new Date().getFullYear()} · V2</span></div></footer>
+      <footer className="site-footer"><div className="site-footer__brand"><SignalMark compact /><span>Sumit Satsangi / Turning Data Into Decisions</span></div><div className="site-footer__links"><a href={`mailto:${profile.email}`}><Mail size={14} /> Email</a><a href={profile.links.github} target="_blank" rel="noreferrer"><Github size={14} /> GitHub</a><a href={profile.links.linkedin} target="_blank" rel="noreferrer"><Linkedin size={14} /> LinkedIn</a></div><span className="site-footer__note">Built around public source material · {new Date().getFullYear()}</span></footer>
     </div>
   );
 }
