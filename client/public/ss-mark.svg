@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 72" role="img" aria-label="SS signal mark">
+  <rect width="96" height="72" rx="8" fill="#111311"/>
+  <g fill="#dfaa55" transform="skewY(-24)">
+    <rect x="24" y="34" width="11" height="27" rx="2"/>
+    <rect x="42" y="22" width="11" height="39" rx="2" opacity=".8"/>
+    <rect x="60" y="7" width="11" height="54" rx="2" opacity=".96"/>
+  </g>
+</svg>

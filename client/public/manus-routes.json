@@ -1,0 +1,6 @@
+{
+  "routes": [
+    { "path": "/", "title": "Sumit Satsangi — Turning Data Into Decisions" },
+    { "path": "/404", "title": "Page not found — Sumit Satsangi" }
+  ]
+}
