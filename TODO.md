@@ -1,38 +1,10 @@
-# Implementation checklist — Sumit Satsangi portfolio
 
-## Source-grounded content
+## V2 visual controls and polish
 
-- [x] Use the publicly readable existing website and search-indexed LinkedIn headline as the factual source; do not infer private LinkedIn data.
-- [x] Preserve verified professional history: Astraa / Saama Product Manager (Mar 2022–present), Genpact progression (Aug 2012–Mar 2022), independent training (Sep 2007–Jul 2012), and earlier Genpact / GE Capital International Services (Sep 2005–Apr 2007).
-- [x] Preserve verified education, projects, certifications, tools, public links, and domain coverage; omit information that is not verifiable.
-- [x] Do not publish unsupported example metrics such as $2M+, 90%, 5,000+, or 500+; use only source-backed evidence.
-
-## Executive visual identity
-
-- [x] Create a complete visual redesign with a deep charcoal / near-black foundation, warm off-white type, one restrained amber accent, generous whitespace, fine borders, subtle grids, elegant typography, and limited glass effects.
-- [x] Position Sumit as a senior data and analytics leader who bridges business strategy, analytics, technology, and execution, not as a generic developer.
-- [x] Include the hero headline “Turning Data Into Decisions.”, a source-grounded subheadline, “Explore My Work”, “Let’s Connect”, and a persistent “Let’s Talk” CTA.
-- [x] Use a distinctive SS signal-bar mark and an executive data-editorial layout rather than a generic portfolio template or stock imagery.
-
-## Dynamic portfolio experience
-
-- [x] Provide simple anchor navigation for Home, About, Experience, Impact, Projects, Thought Leadership, and Contact.
-- [x] Build a Career Intelligence timeline covering verified career stages; hover and keyboard focus reveal role, organization, date, industry context, technologies, responsibility, and outcome when supported.
-- [x] Build the “Where Business Meets Data.” capability constellation as interconnected capabilities, not a conventional skills grid.
-- [x] Build a Selected Impact section using source-backed evidence only, with explanations for each signal.
-- [x] Build premium case-study cards for the verified Maven Toys and Maven Restaurant projects with challenge, approach, technology, role, outcome, and public proof links.
-- [x] Build a grouped Technology Landscape for Power BI, Tableau, Alteryx, R, SQL, Excel, DAX, M Query, Power Query, VBA, QuickSight, OBIEE, Spotfire, Box, ACBS, Siebel, Webcash, and CTX+ where verified.
-- [x] Build leadership proof points for stakeholder management, team leadership, Scrum / SAFe, requirements translation, operational governance, training, and executive communication from the source.
-- [x] Build Thought Leadership links around verified website posts, GitHub, LinkedIn, and Tableau Public; do not invent a podcast or YouTube presence.
-- [x] Build “Beyond the Resume” and “Have an interesting problem?” contact sections with verified email and profile links plus inquiry categories.
-
-## Technical quality
-
-- [x] Keep the site mobile-first, fully responsive, semantic, accessible, fast, and free of unnecessary dependencies.
-- [x] Use keyboard-accessible timeline controls, visible focus states, descriptive links, good contrast, and reduced-motion fallbacks.
-- [x] Use purposeful scroll reveals, subtle metric/timeline motion, hover states, and micro-interactions; respect prefers-reduced-motion.
-- [x] Add SEO title, description, canonical/social metadata, and the static `/manus-routes.json` route manifest for `/` and `/404`.
-- [x] Register/retain host-managed TypeScript diagnostics and resolve actionable diagnostics.
-- [x] Run `pnpm check`, `pnpm test`, and `pnpm build:static`; start the preview server and verify the preview response.
-- [x] Review desktop and mobile screenshots for clipping, hierarchy, overflow, timeline behavior, and visual consistency.
-- [x] Commit the finished site to canonical `main`; report preview unless successful publication is confirmed.
+- [x] Add a user-selectable whole-site font switcher for Roboto Sans Thin, Calibri Light, and Tahoma; persist the preference locally.
+- [x] Raise the smallest UI label sizes so the lowest microcopy remains legible.
+- [x] Add selectable neon green, neon orange, and neon pink highlight themes; use dark green, dark orange, or dark magenta companion text on light surfaces.
+- [x] Keep V2 highlight controls unfilled, using a thicker bottom border for the active signal color.
+- [x] Move “Trace the impact” below the technology buttons inside the same case-study container.
+- [x] Label the release as V2 / package version 2.0.0.
+- [x] Re-run TypeScript, tests, static build, route/metadata checks, and desktop/mobile visual QA.
