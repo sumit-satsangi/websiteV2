@@ -1,6 +1,9 @@
 {
   "routes": [
     { "path": "/", "title": "Sumit Satsangi — Turning Data Into Decisions" },
+    { "path": "/projects", "title": "Projects — Sumit Satsangi" },
+    { "path": "/blogs", "title": "Blogs — Sumit Satsangi" },
+    { "path": "/podcast", "title": "Podcast — Sumit Satsangi" },
     { "path": "/404", "title": "Page not found — Sumit Satsangi" }
   ]
 }

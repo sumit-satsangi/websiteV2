@@ -1,6 +1,6 @@
 # W1 deployment handoff
 
-This repository is the W1 static export of the Sumit Satsangi portfolio. It is ready to follow a public GitHub → Netlify workflow.
+This repository is the W5 static export of the Sumit Satsangi portfolio. It is ready to follow a public GitHub → Netlify workflow.
 
 ## Netlify settings
 
@@ -41,4 +41,4 @@ The canonical and social metadata currently reference `https://www.sumitsatsangi
 - `canonical`
 - `og:image` if a new social preview asset is preferred
 
-The public source-grounded content and design are preserved from the restored W1 baseline. The W1 release is recorded in Git history with the deployment configuration included in the same commit.
+The public source-grounded content and design are preserved from the restored W1 baseline. The W5 release is recorded in Git history with the deployment configuration included in the same commit.

@@ -1,4 +1,4 @@
-# W1 — Sumit Satsangi: Turning Data Into Decisions
+# W5 — Sumit Satsangi: Turning Data Into Decisions
 
 A static React/Vite portfolio prepared for a public GitHub → Netlify deployment workflow.
 

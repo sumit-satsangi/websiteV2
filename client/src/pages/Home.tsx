@@ -29,15 +29,17 @@ import {
   profile,
   technologyGroups,
 } from "@/data/profile";
+import { podcastEpisodes, podcastShow } from "@/data/content";
 
 const navItems = [
-  { id: "home", label: "Home" },
-  { id: "about", label: "About" },
-  { id: "experience", label: "Experience" },
-  { id: "impact", label: "Impact" },
-  { id: "projects", label: "Projects" },
-  { id: "thought-leadership", label: "Thought Leadership" },
-  { id: "contact", label: "Contact" },
+  { id: "home", label: "Home", href: "#home" },
+  { id: "about", label: "About", href: "#about" },
+  { id: "experience", label: "Experience", href: "#experience" },
+  { id: "impact", label: "Impact", href: "#impact" },
+  { id: "projects", label: "Projects", href: "#projects" },
+  { id: "blogs", label: "Blogs", href: "/blogs", internal: true },
+  { id: "podcast", label: "Podcast", href: "/podcast", internal: true },
+  { id: "contact", label: "Contact", href: "#contact" },
 ];
 
 function useActiveSection() {
@@ -87,8 +89,8 @@ function SiteNav({ active }: { active: string }) {
           <a
             key={item.id}
             className={active === item.id ? "site-nav__link site-nav__link--active" : "site-nav__link"}
-            href={`#${item.id}`}
-            onClick={(event) => { event.preventDefault(); scrollTo(item.id); }}
+            href={item.href}
+            onClick={(event) => { if (!item.internal) { event.preventDefault(); scrollTo(item.id); } }}
           >
             <span>{String(index + 1).padStart(2, "0")}</span>{item.label}
           </a>
@@ -211,6 +213,11 @@ export default function Home() {
           <div className="case-study-list">
             {caseStudies.map((study, index) => <CaseStudyCard key={study.title} study={study} index={index} />)}
           </div>
+        </section>
+
+        <section className="section-shell podcast-spotlight" aria-labelledby="podcast-spotlight-heading">
+          <div className="podcast-spotlight__art"><img src={podcastShow.artwork} alt={`${podcastShow.title} album art`} loading="lazy" /></div>
+          <div className="podcast-spotlight__copy"><span className="data-label">New / Podcast</span><h2 id="podcast-spotlight-heading">Productivity Playbook.</h2><p>{podcastShow.description}</p><span className="podcast-spotlight__latest">Latest: {podcastEpisodes[0].title}</span><a className="text-link" href="/podcast">Explore the podcast archive <ArrowUpRight size={15} /></a></div>
         </section>
 
         <section id="technology" className="section-shell section-shell--dark technology-section">
