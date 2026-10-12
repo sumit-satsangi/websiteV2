@@ -37,7 +37,7 @@ export function InternalPageShell({
         </section>
         {children}
       </main>
-      <footer className="site-footer"><div className="site-footer__brand"><SignalMark compact /><span>Sumit Satsangi / W5</span></div><div className="site-footer__links"><a href="/">Home</a><a href="/projects">Projects</a><a href="/blogs">Blogs</a><a href="/podcast">Podcast</a></div><span className="site-footer__note">Source-grounded archive · {new Date().getFullYear()}</span></footer>
+      <footer className="site-footer"><div className="site-footer__brand"><SignalMark compact /><span>Sumit Satsangi / W6</span></div><div className="site-footer__links"><a href="/">Home</a><a href="/projects">Projects</a><a href="/blogs">Blogs</a><a href="/podcast">Podcast</a><a href="/admin">Admin</a></div><span className="site-footer__note">Source-grounded archive · {new Date().getFullYear()}</span></footer>
     </div>
   );
 }

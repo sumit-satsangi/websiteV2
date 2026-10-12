@@ -2,6 +2,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { MotionConfig } from "framer-motion";
 import ErrorBoundary from "./components/ErrorBoundary";
+import Admin from "./pages/Admin";
 import Blogs from "./pages/Blogs";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
@@ -16,7 +17,9 @@ function App() {
     "/blogs": <Blogs />,
     "/podcast": <Podcast />,
   } as const;
-  const page = pages[window.location.pathname as keyof typeof pages] ?? <NotFound />;
+  const page = window.location.pathname === "/admin" || window.location.pathname.startsWith("/admin/")
+    ? <Admin />
+    : pages[window.location.pathname as keyof typeof pages] ?? <NotFound />;
 
   return (
     <ErrorBoundary>

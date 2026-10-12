@@ -4,6 +4,10 @@
     { "path": "/projects", "title": "Projects — Sumit Satsangi" },
     { "path": "/blogs", "title": "Blogs — Sumit Satsangi" },
     { "path": "/podcast", "title": "Podcast — Sumit Satsangi" },
+    { "path": "/admin", "title": "Content manager — Sumit Satsangi" },
+    { "path": "/admin/:type", "title": "Content collection — Sumit Satsangi" },
+    { "path": "/admin/:type/new", "title": "New content — Sumit Satsangi" },
+    { "path": "/admin/:type/:id", "title": "Edit content — Sumit Satsangi" },
     { "path": "/404", "title": "Page not found — Sumit Satsangi" }
   ]
 }
