@@ -23,7 +23,7 @@ Connect the GitHub repository `sumit-satsangi/websiteV2` to Netlify. Keep the se
 - Node version: `22`
 - No Netlify Functions or OAuth environment variables are required for W9 public publishing.
 
-The build command validates `_data/*.yml`, generates the archive fragments in `_generated/`, checks that Quarto is available, and renders the site.
+The build command validates `_data/*.yml`, generates the archive fragments in `_generated/`, uses the pinned Quarto `1.10.19` release if Netlify does not already provide Quarto, and renders the site.
 
 ## 3. GitHub editing workflow
 
@@ -50,5 +50,5 @@ Update `site-url` in `_quarto.yml` if the canonical domain changes. The Quarto w
 - **YAML parse error:** quote values containing `:` or special punctuation; compare the record with an existing entry.
 - **Record missing publicly:** check `status`, run `pnpm w9:generate`, and confirm the record appears in `_generated/`.
 - **Filters do not show a tag:** check the tag spelling and ensure at least one published record uses it.
-- **Netlify build cannot find Quarto:** configure a Netlify build image/toolchain that includes Quarto, or use the repository’s documented Quarto build image before deploying.
+- **Netlify build cannot find Quarto:** the W9 build script downloads the pinned Quarto release automatically. Check that the build environment permits outbound HTTPS downloads, or set `QUARTO_VERSION` to an available Quarto release.
 - **Page does not appear in navigation:** add it to `_quarto.yml`, create the `.qmd`, add it to `manus-routes.json`, and render again.
