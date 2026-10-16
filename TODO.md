@@ -48,3 +48,15 @@
 - [x] Add Netlify-compatible serverless functions for OAuth start/callback/session/logout and GitHub content list/save/archive/preview operations, with documented environment variables and no committed secrets.
 - [x] Keep the Netlify build deterministic with `pnpm install --frozen-lockfile && pnpm build:static`, publish `dist/public`, preserve SPA fallback routing, and document GitHub OAuth App callback configuration, repository permissions, environment variables, local development, and branch/PR behavior.
 - [x] Keep `/manus-routes.json` synchronized with public and admin routes, configure TypeScript diagnostics before source edits, and validate with `pnpm check`, `pnpm test`, `pnpm build:static`, route smoke tests, and a read-only requirements review.
+
+
+## W9 — Full RStudio-editable Markdown/Quarto website
+
+- [x] Rebuild the current W6 website as a complete static Quarto/Markdown website, replacing the React/Vite runtime and GitHub OAuth admin dashboard with transparent file-based editing through RStudio and GitHub.
+- [x] Preserve the verified executive identity, “Turning Data Into Decisions.” positioning, charcoal/warm-paper/amber design system, responsive navigation, accessibility, SEO metadata, canonical/social metadata, reduced-motion behavior, and sections for Home, About, Experience, Impact, Projects, Blogs, Podcast, Technology, Leadership/Thought Leadership and Contact.
+- [x] Move editable profile and archive metadata into simple YAML files under `_data/`, use YAML front matter in `.qmd` pages, and support long-form blog posts in `posts/*.qmd` plus optional podcast episode pages in `podcast/*.qmd`.
+- [x] Provide Projects, Blogs and Podcast archive pages with descending ordering, tags, Year → Month refinement, explicit handling for missing dates, published/draft/archived status filtering, and Apple Podcasts/Spotify links.
+- [x] Provide a maintainable Quarto project structure with `_quarto.yml`, reusable partials/includes, `styles.css`, assets, content-validation/build scripts, route manifest, Netlify configuration and RStudio/GitHub/Netlify documentation.
+- [x] Keep the static site safe for GitHub editing: no fabricated claims, no committed secrets, no private credentials required during build, and no server-side admin login in W9.
+- [x] Make local editing work in RStudio with `quarto preview` and `quarto render`, and make GitHub-to-Netlify deployment work from the `main` branch with a deterministic build and `_site` publish directory.
+- [x] Validate the W9 source with YAML/content checks, Quarto rendering, route checks, build output checks, responsive/accessibility inspection, and a read-only requirements review before checkpointing.

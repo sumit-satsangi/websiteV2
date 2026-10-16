@@ -1,0 +1,13 @@
+---
+title: "2022-01-01"
+date: 2022-01-01
+author: "Sumit Satsangi"
+categories: [Statistics, IBS, Series]
+status: published
+description: "A note on samples, population variation, and why a statistician needs to make sure a sample covers the variations in the population."
+canonical-url: "https://www.sumitsatsangi.com/posts/series-ibs/2022-01-01/"
+---
+
+A note on samples, population variation, and why a statistician needs to make sure a sample covers the variations in the population.
+
+[Read the original post](https://www.sumitsatsangi.com/posts/series-ibs/2022-01-01/){.button .button--solid}

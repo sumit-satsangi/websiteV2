@@ -1,0 +1,15 @@
+---
+title: "Blogs — Sumit Satsangi"
+description: "Notes on analytics, leadership, learning and useful systems."
+page-layout: full
+---
+
+<section class="page-hero">
+  <div class="eyebrow">Archive / Blogs</div>
+  <h1>Make the signal useful.</h1>
+  <p>Notes on analytics, learning, leadership and the systems that make professional work more intentional.</p>
+</section>
+
+{{< include _generated/blogs-body.qmd >}}
+
+<script src="assets/site.js"></script>

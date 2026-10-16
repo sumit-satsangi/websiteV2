@@ -1,0 +1,15 @@
+---
+title: "Projects — Sumit Satsangi"
+description: "Public analytics work, arranged for inspection."
+page-layout: full
+---
+
+<section class="page-hero">
+  <div class="eyebrow">Archive / Projects</div>
+  <h1>Work, arranged for inspection.</h1>
+  <p>The latest public analytics work sits on the homepage. This archive gives the complete verified project list a more useful shape: searchable, tagged, and grouped by the date published when that date is available.</p>
+</section>
+
+{{< include _generated/projects-body.qmd >}}
+
+<script src="assets/site.js"></script>

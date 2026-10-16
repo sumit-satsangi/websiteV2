@@ -1,0 +1,56 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "posts/*.qmd"
+  resources:
+    - assets
+    - _generated
+    - manus-routes.json
+    - _redirects
+website:
+  title: "Sumit Satsangi — Turning Data Into Decisions"
+  site-url: https://www.sumitsatsangi.com/
+  description: "Sumit Satsangi — Data & Analytics Leader, Business Consultant and Power BI Architect."
+  favicon: assets/ss-mark.svg
+  open-graph: true
+  twitter-card: true
+  navbar:
+    background: "#111311"
+    foreground: "#F3F1EA"
+    logo: assets/ss-mark.svg
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "About"
+        href: about.qmd
+      - text: "Experience"
+        href: experience.qmd
+      - text: "Impact"
+        href: impact.qmd
+      - text: "Projects"
+        href: projects.qmd
+      - text: "Blogs"
+        href: blogs.qmd
+      - text: "Podcast"
+        href: podcast.qmd
+      - text: "Contact"
+        href: contact.qmd
+    right:
+      - text: "Let's Talk"
+        href: contact.qmd
+  page-footer:
+    left: "SS / DATA & DECISIONS"
+    right: "Built from Markdown · W9"
+format:
+  html:
+    theme: none
+    css: styles.css
+    toc: false
+    smooth-scroll: true
+    html-math-method: plain
+    code-fold: false
+    link-external-newwindow: true
+execute:
+  freeze: auto

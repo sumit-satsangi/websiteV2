@@ -1,0 +1,53 @@
+- id: maven-toys-challenge
+  title: Maven Toys Challenge
+  date: null
+  status: published
+  order: 1
+  type: Expansion planning · Power BI visualization
+  tags:
+    - Power BI
+    - Data analysis
+    - Visualization
+    - Expansion planning
+  summary: A public analytics challenge exploring how evidence can support a
+    toy-business expansion plan.
+  challenge: Formulate an expansion plan with reasons and supporting data.
+  approach: Structured the challenge around the evidence a decision-maker would
+    need before choosing where to expand.
+  technology:
+    - Power BI
+    - Data analysis
+    - Visualization
+  role: Analytics challenge contestant
+  outcome: A public analysis that makes the expansion question legible through
+    supporting data.
+  href: https://github.com/sumit-satsangi/MavenChallenges/tree/2021.05-Toy-Challenge
+  hrefLabel: View the GitHub work
+  accent: amber
+- id: maven-restaurant-challenge
+  title: Maven Restaurant Challenge
+  date: null
+  status: published
+  order: 2
+  type: Investment criteria · Tableau visualization
+  tags:
+    - Tableau
+    - Statistics
+    - Data storytelling
+    - Investment criteria
+  summary: A public dashboard that turns restaurant investment criteria into an
+    explorable decision story.
+  challenge: Outline what to look for in a restaurant investment and support the
+    recommendation with data.
+  approach: Translated the investment question into a visual analysis of the
+    signals that could inform a decision.
+  technology:
+    - Tableau
+    - Statistics
+    - Data storytelling
+  role: Analytics challenge contestant
+  outcome: A public dashboard that turns restaurant investment criteria into an
+    explorable story.
+  href: https://public.tableau.com/app/profile/sumitsatsangi/viz/Maven_Restaurant_Challenge_Sumit/Dashboard
+  hrefLabel: Open the Tableau dashboard
+  accent: sage

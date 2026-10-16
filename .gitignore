@@ -111,3 +111,10 @@ temp/
 
 # Manus version file (auto-generated, not part of source)
 client/public/__manus__/version.json
+
+/.quarto/
+**/*.quarto_ipynb
+_site/
+_generated/
+docs/
+scripts/create-maintenance-guide.py

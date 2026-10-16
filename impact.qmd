@@ -1,0 +1,9 @@
+---
+title: "Impact — Sumit Satsangi"
+description: "Selected public signals from a career across data, analytics and operations."
+page-layout: full
+---
+
+<section class="page-hero"><div class="eyebrow">Impact / Public signals</div><h1>Evidence, not theatre.</h1><p>Selected signals from the public record, with the explanatory context that makes each one useful.</p></section>
+
+{{< include _generated/impact-body.qmd > }}

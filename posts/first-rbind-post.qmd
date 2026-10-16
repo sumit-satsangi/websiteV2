@@ -1,0 +1,13 @@
+---
+title: "First rbind post"
+date: 2021-12-23
+author: "Sumit Satsangi"
+categories: [R, Introduction]
+status: published
+description: "An open first post about returning to writing online after a long gap, with a deliberately direct voice."
+canonical-url: "https://www.sumitsatsangi.com/posts/introduction/"
+---
+
+An open first post about returning to writing online after a long gap, with a deliberately direct voice.
+
+[Read the original post](https://www.sumitsatsangi.com/posts/introduction/){.button .button--solid}

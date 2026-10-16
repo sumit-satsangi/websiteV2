@@ -1,60 +1,73 @@
-# W6 — Sumit Satsangi: Turning Data Into Decisions
+# W9 — Sumit Satsangi Markdown/Quarto website
 
-A maintainable React/Vite portfolio with a GitHub-backed content manager for Projects, Blogs, and Podcast episodes. The public design remains the W5 executive data-editorial experience; content records are separated from page components so routine updates do not require UI edits.
+W9 is the RStudio-editable rebuild of the Sumit Satsangi portfolio. The public website is generated from Markdown/Quarto pages, YAML content records, CSS and a small browser script. Edit the source in RStudio, preview locally with Quarto, commit to GitHub, and let Netlify publish the `main` branch.
 
-## Quick start
+## Quick start in RStudio
 
-```bash
-pnpm install --frozen-lockfile
-pnpm content:generate
-pnpm dev:static
-```
-
-Open `http://localhost:3000` for the public preview. Edit the JSON templates in `content/`, then run `pnpm content:generate` to refresh the generated client adapter.
-
-For the OAuth/admin functions locally, use Netlify’s local runtime after installing the CLI on demand:
+Install **Quarto** from <https://quarto.org/docs/get-started/> and install Git. Clone the repository, open it as an RStudio Project, then run from the RStudio Terminal:
 
 ```bash
-pnpm dlx netlify-cli dev
+git clone https://github.com/sumit-satsangi/websiteV2.git
+cd websiteV2
+pnpm install
+pnpm w9:generate
+quarto preview
 ```
 
-## Build and validate
+Open the local URL shown by Quarto, usually `http://localhost:4200`. Save a `.qmd`, `.yml`, `.css` or `.js` file and Quarto will rebuild the preview.
+
+For a one-time production render:
 
 ```bash
-pnpm check
-pnpm test
-pnpm build:static
+pnpm w9:render
 ```
 
-The production bundle is generated in `dist/public`. Every static build regenerates `client/src/data/generatedContent.ts` from `content/` before Vite runs.
+The generated site is `_site/` and is not committed; Netlify creates it during deployment.
 
-## Content editing model
+## What to edit
 
-- `content/projects.json` — project records and public proof links.
-- `content/blogs.json` — blog metadata plus editable Markdown body fields.
-- `content/podcasts.json` — episode metadata and Apple/Spotify links.
-- `content/podcast-show.json` — show-level title, description, links, and album art.
-- `client/src/data/profile.ts` — stable professional profile, career, capabilities, credentials, and education.
+| Goal | File or folder |
+|---|---|
+| Hero, career, capabilities, impact, work, technology, credentials, education and links | `_data/profile.yml` |
+| Projects | `_data/projects.yml` |
+| Blog archive cards and metadata | `_data/blogs.yml` |
+| Podcast show details | `_data/podcast-show.yml` |
+| Podcast episode cards and Apple/Spotify links | `_data/podcasts.yml` |
+| Long-form blog article | `posts/*.qmd` |
+| Optional dedicated episode page | `podcast/*.qmd` |
+| Homepage layout and composition | `index.qmd` and `_generated/profile-body.qmd` output |
+| Projects/Blogs/Podcast page structure | `projects.qmd`, `blogs.qmd`, `podcast.qmd` |
+| About/Experience/Impact/Technology/Leadership/Contact copy | the matching `.qmd` page |
+| Fonts, colours, spacing, responsive layout and motion | `styles.css` |
+| Search/tag filters | `assets/site.js` |
+| Site navigation, SEO and output | `_quarto.yml` |
+| Netlify build and redirects | `netlify.toml` and `_redirects` |
 
-The public build excludes `draft` and `archived` records, sorts by date, and keeps an explicit `Unspecified` date group when a source record has no published date.
+## Content rules
 
-## Admin dashboard
+Use simple YAML and ISO dates. Set `status: draft` while editing and `status: published` when a record should appear publicly. Use `status: archived` when you want to retain a record in Git without showing it on the public archive. Blank dates are allowed and appear under `Unspecified`.
 
-Open `/admin` on the deployed site. GitHub OAuth protects the dashboard. Projects, Blogs, and Podcast templates support create/edit, tags, dates, ordering, draft/published status, links, image fields, preview-ready text, and archive actions. Saving does not mutate `main` directly: the server validates the record, creates a CMS branch, commits the JSON change, and opens a GitHub pull request.
+Every project, blog and podcast record needs a stable `id` and `title`. Project records should include `tags`, `summary`, `technology`, `href` and `hrefLabel` where available. Blog records should include `excerpt`, `href`, `source` and `canonical-url` where available. Podcast records should include `appleHref` and `spotifyHref` when those episode links exist.
 
-## Netlify deployment
+## Validate before pushing
 
-`netlify.toml` defines the build command, publish directory, Netlify Functions directory, OAuth/content API redirects, admin SPA fallback, and security headers. See [DEPLOYMENT.md](DEPLOYMENT.md) for the exact GitHub OAuth App setup and environment variables.
+```bash
+pnpm w9:generate
+quarto render
+```
 
-## Project structure
+Check `_site/` visually, then:
 
-- `client/src/pages/` — public pages and the W6 admin dashboard.
-- `client/src/components/portfolio/` — reusable visual and page-shell components.
-- `client/src/data/` — typed adapter over editable content records.
-- `content/` — GitHub-backed JSON content templates.
-- `server/` — encrypted session, schema validation, and GitHub API helpers.
-- `netlify/functions/` — OAuth, session, content list/save/archive functions.
-- `scripts/generate-content.mjs` — deterministic content adapter generator.
-- `netlify.toml` — Netlify build, functions, redirects, and headers.
+```bash
+git diff --check
+git status
+git add .
+git commit -m "Update W9 website content"
+git push origin main
+```
 
-No real OAuth credentials, GitHub tokens, session secrets, or admin allowlists belong in this repository.
+Netlify runs `bash scripts/build-w9.sh` and publishes `_site/`. See [DEPLOYMENT.md](DEPLOYMENT.md) for the GitHub and Netlify setup.
+
+## Important W9 change
+
+W9 is a static Markdown/Quarto site. It does **not** include the W6 server-side GitHub OAuth admin dashboard. Routine editing happens in RStudio or GitHub’s file editor through normal branches and pull requests. No OAuth secrets, GitHub tokens or session secrets are required to build the public site.

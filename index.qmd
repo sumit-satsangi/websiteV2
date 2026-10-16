@@ -1,0 +1,11 @@
+---
+title: "Sumit Satsangi — Turning Data Into Decisions"
+description: "Data & Analytics Leader, Business Consultant and Power BI Architect."
+page-layout: full
+---
+
+{{< include _generated/profile-body.qmd >}}
+
+<div class="site-note"><span>W9</span> / Built from Markdown, YAML and Quarto · Edited in RStudio · Versioned in GitHub</div>
+
+<script src="assets/site.js"></script>

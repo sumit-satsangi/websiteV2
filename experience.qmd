@@ -1,0 +1,9 @@
+---
+title: "Experience — Sumit Satsangi"
+description: "Career intelligence across analytics delivery, business intelligence, training and banking operations."
+page-layout: full
+---
+
+<section class="page-hero"><div class="eyebrow">Experience / Career intelligence</div><h1>Context → Signal → Decision.</h1><p>A career spanning data, analytics, operations, enablement and product leadership.</p></section>
+
+{{< include _generated/career-body.qmd > }}

@@ -1,0 +1,13 @@
+---
+title: "Basics (Part 1)"
+date: 2022-01-02
+author: "Sumit Satsangi"
+categories: [R, Series]
+status: published
+description: "A first pass through programming styles in R, written as a practical foundation before taking the next steps."
+canonical-url: "https://www.sumitsatsangi.com/posts/series-r/2022-01-02/"
+---
+
+A first pass through programming styles in R, written as a practical foundation before taking the next steps.
+
+[Read the original post](https://www.sumitsatsangi.com/posts/series-r/2022-01-02/){.button .button--solid}
