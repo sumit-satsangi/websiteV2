@@ -8,6 +8,8 @@ description: "An open first post about returning to writing online after a long 
 canonical-url: "https://www.sumitsatsangi.com/posts/introduction/"
 ---
 
+<!-- W10 EDITING GUIDE: Edit the YAML above for title/SEO fields. Edit the Markdown and HTML below for this page content. Keep the existing class names if you want the current design. -->
+
 An open first post about returning to writing online after a long gap, with a deliberately direct voice.
 
 [Read the original post](https://www.sumitsatsangi.com/posts/introduction/){.button .button--solid}

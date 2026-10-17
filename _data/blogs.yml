@@ -1,3 +1,5 @@
+# W10 EDITING GUIDE: This file controls the Blogs archive cards. Full article writing belongs in posts/*.qmd.
+# W10 TIP: Keep each id unique and use status: draft until the article is ready.
 - id: imposter-syndrome
   title: "08. Imposter Syndrome: Giving Back When You Feel Like a Fraud"
   date: 2025-07-30

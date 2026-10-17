@@ -1,5 +1,7 @@
-/home    /
-/projects    /projects.html
+# W10 EDITING GUIDE: These redirects let visitors use short URLs without .html.
+# Example: /projects opens the generated /projects.html page.
+/home       /
+/projects   /projects.html
 /blogs      /blogs.html
 /podcast    /podcast.html
 /about      /about.html
@@ -7,4 +9,4 @@
 /impact     /impact.html
 /technology /technology.html
 /leadership /leadership.html
-/contact    /contact.html
+/contact   /contact.html

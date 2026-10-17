@@ -4,6 +4,8 @@ description: "Data & Analytics Leader, Business Consultant and Power BI Architec
 page-layout: full
 ---
 
+<!-- W10 EDITING GUIDE: Edit the YAML above for title/SEO fields. Edit the Markdown and HTML below for this page content. Keep the existing class names if you want the current design. -->
+
 {{< include _generated/profile-body.qmd >}}
 
 <div class="site-note"><span>W9</span> / Built from Markdown, YAML and Quarto · Edited in RStudio · Versioned in GitHub</div>

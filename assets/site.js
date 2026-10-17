@@ -1,3 +1,5 @@
+// W10 EDITING GUIDE: This small browser script powers search boxes, tag buttons, and Year/Month archive visibility.
+// W10 TIP: Content belongs in YAML; change this file only when filter behavior needs to change.
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('[data-filter-group]').forEach((group) => {
     const chips = group.querySelectorAll('[data-tag-filter]');

@@ -1,3 +1,5 @@
+# W10 EDITING GUIDE: Add or edit project cards here. Use status: draft while editing, then status: published to display a project.
+# W10 TIP: Dates use YYYY-MM-DD. Leave date blank when no date is confirmed.
 - id: maven-toys-challenge
   title: Maven Toys Challenge
   date: null

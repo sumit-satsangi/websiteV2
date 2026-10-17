@@ -1,10 +1,10 @@
-# Editing W9 in RStudio
+# Editing W10 in RStudio
 
 ## Preview loop
 
 1. Open the repository as an RStudio Project.
 2. Open the Terminal pane.
-3. Run `pnpm w9:generate` once after changing YAML.
+3. Run `pnpm w10:generate` once after changing YAML.
 4. Run `quarto preview` and open the displayed local URL.
 5. Edit `.qmd`, `.yml`, `styles.css` or `assets/site.js` and save.
 6. Refresh the preview if the browser does not update automatically.

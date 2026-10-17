@@ -4,6 +4,8 @@ description: "Selected public signals from a career across data, analytics and o
 page-layout: full
 ---
 
+<!-- W10 EDITING GUIDE: Edit the YAML above for title/SEO fields. Edit the Markdown and HTML below for this page content. Keep the existing class names if you want the current design. -->
+
 <section class="page-hero"><div class="eyebrow">Impact / Public signals</div><h1>Evidence, not theatre.</h1><p>Selected signals from the public record, with the explanatory context that makes each one useful.</p></section>
 
 {{< include _generated/impact-body.qmd > }}

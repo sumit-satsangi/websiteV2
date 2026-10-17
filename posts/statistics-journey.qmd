@@ -8,6 +8,8 @@ description: "A reading note on making statistics easier to understand and shari
 canonical-url: "https://www.sumitsatsangi.com/posts/series-ibs/2021-12-25/"
 ---
 
+<!-- W10 EDITING GUIDE: Edit the YAML above for title/SEO fields. Edit the Markdown and HTML below for this page content. Keep the existing class names if you want the current design. -->
+
 A reading note on making statistics easier to understand and sharing the logic behind the journey.
 
 [Read the original post](https://www.sumitsatsangi.com/posts/series-ibs/2021-12-25/){.button .button--solid}

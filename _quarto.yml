@@ -1,3 +1,5 @@
+# W10 EDITING GUIDE: Quarto reads this file to build the site. Navigation links point to .qmd pages.
+# W10 TIP: Add a page to both the navbar and manus-routes.json when creating a new page.
 project:
   type: website
   output-dir: _site
@@ -42,7 +44,7 @@ website:
         href: contact.qmd
   page-footer:
     left: "SS / DATA & DECISIONS"
-    right: "Built from Markdown · W9"
+    right: "Built from Markdown · W10"
 format:
   html:
     theme: none

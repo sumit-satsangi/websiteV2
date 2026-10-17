@@ -1,11 +1,17 @@
+// W10 EDITING GUIDE: This script reads _data/*.yml, validates records, and creates temporary HTML fragments in _generated/.
+// W10 TIP: Edit YAML first. Edit this file only when you want to change generated archive cards or homepage section structure.
 import fs from "node:fs/promises";
 import path from "node:path";
 import { parse, stringify } from "yaml";
 
+// The script runs from the project root. These folders are the editable YAML
+// input and the temporary fragments consumed by Quarto.
 const root = process.cwd();
 const dataDir = path.join(root, "_data");
 const generatedDir = path.join(root, "_generated");
 
+// Small helpers keep generated HTML safe and consistent. Normally, edit YAML
+// rather than changing these functions.
 const readYaml = async (file) => parse(await fs.readFile(path.join(dataDir, file), "utf8"));
 const esc = (value = "") => String(value).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\"/g, "&quot;");
 const href = (value = "") => esc(value);
@@ -69,6 +75,8 @@ for (const [collectionName, records] of Object.entries({ projects, blogs, podcas
 }
 await fs.rm(generatedDir, { recursive: true, force: true });
 await fs.mkdir(generatedDir, { recursive: true });
+// Only records marked published appear publicly. Draft and archived records
+// remain in Git so they can be edited or restored later.
 const projectPublished = published(projects);
 const blogPublished = published(blogs);
 const podcastPublished = published(podcasts);
@@ -95,4 +103,4 @@ for (const file of await fs.readdir(generatedDir)) {
 }
 const counts = { projects: projectPublished.length, blogs: blogPublished.length, podcasts: podcastPublished.length };
 await fs.writeFile(path.join(generatedDir, "site-stats.yml"), stringify({ generated: new Date().toISOString(), counts }), "utf8");
-console.log(`W9 content validated: ${counts.projects} projects, ${counts.blogs} blogs, ${counts.podcasts} podcast episodes`);
+console.log(`W10 content validated: ${counts.projects} projects, ${counts.blogs} blogs, ${counts.podcasts} podcast episodes`);

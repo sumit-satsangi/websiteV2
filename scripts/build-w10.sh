@@ -1,9 +1,11 @@
+# W10 EDITING GUIDE: This is the one build command used locally and on Netlify. It validates content, installs Quarto if needed, and renders _site/.
+# W10 TIP: Do not edit the generated _site files directly.
 #!/usr/bin/env bash
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
-node scripts/generate-w9.mjs
+node scripts/generate-w10.mjs
 if ! command -v quarto >/dev/null 2>&1; then
   QUARTO_VERSION="${QUARTO_VERSION:-1.10.19}"
   QUARTO_DIR="${TMPDIR:-/tmp}/quarto-w9-${QUARTO_VERSION}"

@@ -1,6 +1,6 @@
-# W9 — Sumit Satsangi Markdown/Quarto website
+# W10 — Sumit Satsangi Markdown/Quarto website
 
-W9 is the RStudio-editable rebuild of the Sumit Satsangi portfolio. The public website is generated from Markdown/Quarto pages, YAML content records, CSS and a small browser script. Edit the source in RStudio, preview locally with Quarto, commit to GitHub, and let Netlify publish the `main` branch.
+W10 is the RStudio-editable rebuild of the Sumit Satsangi portfolio. The public website is generated from Markdown/Quarto pages, YAML content records, CSS and a small browser script. Edit the source in RStudio, preview locally with Quarto, commit to GitHub, and let Netlify publish the `main` branch.
 
 ## Quick start in RStudio
 
@@ -10,7 +10,7 @@ Install **Quarto** from <https://quarto.org/docs/get-started/> and install Git. 
 git clone https://github.com/sumit-satsangi/websiteV2.git
 cd websiteV2
 pnpm install
-pnpm w9:generate
+pnpm w10:generate
 quarto preview
 ```
 
@@ -19,7 +19,7 @@ Open the local URL shown by Quarto, usually `http://localhost:4200`. Save a `.qm
 For a one-time production render:
 
 ```bash
-pnpm w9:render
+pnpm w10:render
 ```
 
 The generated site is `_site/` and is not committed; Netlify creates it during deployment.
@@ -52,7 +52,7 @@ Every project, blog and podcast record needs a stable `id` and `title`. Project 
 ## Validate before pushing
 
 ```bash
-pnpm w9:generate
+pnpm w10:generate
 quarto render
 ```
 
@@ -62,12 +62,16 @@ Check `_site/` visually, then:
 git diff --check
 git status
 git add .
-git commit -m "Update W9 website content"
+git commit -m "Update W10 website content"
 git push origin main
 ```
 
-Netlify runs `bash scripts/build-w9.sh` and publishes `_site/`. See [DEPLOYMENT.md](DEPLOYMENT.md) for the GitHub and Netlify setup.
+Netlify runs `bash scripts/build-w10.sh` and publishes `_site/`. See [DEPLOYMENT.md](DEPLOYMENT.md) for the GitHub and Netlify setup.
 
-## Important W9 change
+## Important W10 change
 
-W9 is a static Markdown/Quarto site. It does **not** include the W6 server-side GitHub OAuth admin dashboard. Routine editing happens in RStudio or GitHub’s file editor through normal branches and pull requests. No OAuth secrets, GitHub tokens or session secrets are required to build the public site.
+W10 is a static Markdown/Quarto site. Routine editing happens in RStudio or GitHub’s file editor through normal branches and pull requests. No OAuth secrets, GitHub tokens or session secrets are required to build the public site.
+
+## W10 beginner notes
+
+If you are unsure where to start, open `W10-CODE-GUIDE.md`. It explains every active file in plain English and includes copy-paste examples for projects, blogs, podcast episodes, design changes, previewing, and publishing.

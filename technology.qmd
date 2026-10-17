@@ -4,6 +4,8 @@ description: "A technology landscape grouped by the role tools play in the analy
 page-layout: full
 ---
 
+<!-- W10 EDITING GUIDE: Edit the YAML above for title/SEO fields. Edit the Markdown and HTML below for this page content. Keep the existing class names if you want the current design. -->
+
 <section class="page-hero"><div class="eyebrow">Technology / Landscape</div><h1>The stack is a means.</h1><p>Tools grouped by the role they play in making evidence useful, not a list of disconnected badges.</p></section>
 
 {{< include _generated/technology-body.qmd > }}

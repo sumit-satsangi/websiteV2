@@ -8,6 +8,8 @@ description: "A first pass through programming styles in R, written as a practic
 canonical-url: "https://www.sumitsatsangi.com/posts/series-r/2022-01-02/"
 ---
 
+<!-- W10 EDITING GUIDE: Edit the YAML above for title/SEO fields. Edit the Markdown and HTML below for this page content. Keep the existing class names if you want the current design. -->
+
 A first pass through programming styles in R, written as a practical foundation before taking the next steps.
 
 [Read the original post](https://www.sumitsatsangi.com/posts/series-r/2022-01-02/){.button .button--solid}

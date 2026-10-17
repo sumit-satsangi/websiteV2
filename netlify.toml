@@ -1,3 +1,5 @@
+# W10 EDITING GUIDE: Netlify runs the build command and publishes the _site folder.
+# W10 TIP: Do not change the publish folder unless you also change scripts/build-w10.sh.
 [build]
   command = "bash scripts/build-w9.sh"
   publish = "_site"

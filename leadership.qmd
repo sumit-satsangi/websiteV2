@@ -4,6 +4,8 @@ description: "Leadership, stakeholder clarity, enablement and practical thought 
 page-layout: full
 ---
 
+<!-- W10 EDITING GUIDE: Edit the YAML above for title/SEO fields. Edit the Markdown and HTML below for this page content. Keep the existing class names if you want the current design. -->
+
 <section class="page-hero"><div class="eyebrow">Leadership / Thought leadership</div><h1>Translate intent into execution.</h1><p>Leadership is the route between executive intent and the delivery detail that makes action possible.</p></section>
 
 <section class="reading-section"><div class="eyebrow">Operating proof points</div><h2>Give the team a clear route to done.</h2><div class="principle-grid"><article><span>01</span><h3>Clarity</h3><p>Turn stakeholder questions into useful requirements and measurable outcomes.</p></article><article><span>02</span><h3>Cadence</h3><p>Build an operating rhythm that makes progress visible without adding noise.</p></article><article><span>03</span><h3>Capability</h3><p>Leave teams with stronger systems, clearer language and more confidence.</p></article></div></section>

@@ -8,6 +8,8 @@ description: "A note on samples, population variation, and why a statistician ne
 canonical-url: "https://www.sumitsatsangi.com/posts/series-ibs/2022-01-01/"
 ---
 
+<!-- W10 EDITING GUIDE: Edit the YAML above for title/SEO fields. Edit the Markdown and HTML below for this page content. Keep the existing class names if you want the current design. -->
+
 A note on samples, population variation, and why a statistician needs to make sure a sample covers the variations in the population.
 
 [Read the original post](https://www.sumitsatsangi.com/posts/series-ibs/2022-01-01/){.button .button--solid}

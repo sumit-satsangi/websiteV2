@@ -8,6 +8,8 @@ description: "A practical reflection on sharing knowledge, mentoring, and moving
 canonical-url: "https://medium.com/@sumit.satsangi/08-imposter-syndrome-giving-back-when-you-feel-like-a-fraud-ac8efa6313e5"
 ---
 
+<!-- W10 EDITING GUIDE: Edit the YAML above for title/SEO fields. Edit the Markdown and HTML below for this page content. Keep the existing class names if you want the current design. -->
+
 A practical reflection on sharing knowledge, mentoring, and moving through the self-doubt that appears when it is time to give back.
 
 ## Read the full article

@@ -4,6 +4,8 @@ description: "Have an interesting problem? Start a conversation about analytics,
 page-layout: full
 ---
 
+<!-- W10 EDITING GUIDE: Edit the YAML above for title/SEO fields. Edit the Markdown and HTML below for this page content. Keep the existing class names if you want the current design. -->
+
 <section class="page-hero"><div class="eyebrow">Contact / A useful next conversation</div><h1>Have an interesting problem?</h1><p>If the question sits between strategy, data and execution, it may be worth a conversation.</p><div class="contact-actions"><a class="button button--solid" href="mailto:sumit.satsangi@aol.com">sumit.satsangi@aol.com ↗</a><a class="button" href="https://www.linkedin.com/in/sumitsatsangi" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></section>
 
 <section class="reading-section"><div class="eyebrow">Possible starting points</div><h2>Bring the question, not the polished brief.</h2><div class="principle-grid"><article><span>01</span><h3>Analytics leadership</h3><p>Clarify the role, operating rhythm or team system around a data function.</p></article><article><span>02</span><h3>Power BI & BI architecture</h3><p>Make the reporting layer more decision-ready and more useful to the business.</p></article><article><span>03</span><h3>Transformation conversations</h3><p>Explore the handoff between executive intent, data and execution.</p></article></div></section>
